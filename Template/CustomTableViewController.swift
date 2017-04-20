@@ -32,18 +32,23 @@ class CustomTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-
+//
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as! CustomTableViewCell
-
+        if(indexPath.row==0){
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FootballCell", for: indexPath) as! CustomTableViewCell
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "BasketballCell", for: indexPath) as! CustomTableViewCell
+            return cell
+        }
         // Configure the cell...
 
-        return cell
+        
     }
 
     /*
