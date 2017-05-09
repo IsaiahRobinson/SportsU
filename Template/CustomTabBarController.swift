@@ -26,7 +26,7 @@ class CustomTabBarController: UITabBarController {
 
         // Do any additional setup after loading the view.
         
-        configureAuth()
+//        configureAuth()
     }
 
     func configureAuth() {

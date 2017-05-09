@@ -22,12 +22,12 @@
                     <connections>
                         <segue destination="jvN-VA-gDQ" kind="relationship" relationship="viewControllers" id="ryJ-9I-CHP"/>
                         <segue destination="9Sq-Jf-Jki" kind="relationship" relationship="viewControllers" id="2vg-Xe-ct0"/>
-                        <segue destination="cKH-rb-CvU" kind="relationship" relationship="viewControllers" id="ju8-k5-hCo"/>
+                        <segue destination="gSG-yO-7Af" kind="relationship" relationship="viewControllers" id="28M-sP-8Yf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YoM-N0-r2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-874" y="-176"/>
+            <point key="canvasLocation" x="-972" y="-289"/>
         </scene>
         <!--Custom Collection View Controller-->
         <scene sceneID="ByV-RD-1xZ">
@@ -50,16 +50,7 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="118" height="118"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rap-battle" translatesAutoresizingMaskIntoConstraints="NO" id="XHr-hx-hie">
-                                            <rect key="frame" x="8" y="8" width="101" height="101"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                    </subviews>
                                 </view>
-                                <connections>
-                                    <outlet property="photoImageView" destination="XHr-hx-hie" id="p6V-ZN-3jh"/>
-                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -119,11 +110,11 @@
                                     <outlet property="addressLabel" destination="QlM-En-vRS" id="x1f-Z1-1ec"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasketballCell" rowHeight="158" id="Hux-f0-rs4" customClass="CustomTableViewCell" customModule="Template" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="179" width="375" height="158"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasketballCell" rowHeight="119" id="Hux-f0-rs4" customClass="CustomTableViewCell" customModule="Template" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="179" width="375" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hux-f0-rs4" id="EGc-sB-UlJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hqdefault" translatesAutoresizingMaskIntoConstraints="NO" id="Fvg-sX-xLu">
@@ -163,6 +154,48 @@
                                     <outlet property="photoImageView" destination="Fvg-sX-xLu" id="fmz-8j-rk2"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SoccerCell" id="ahG-hc-ZRf" userLabel="SoccerCell" customClass="CustomTableViewCell" customModule="Template" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="298" width="375" height="132"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ahG-hc-ZRf" id="fzZ-KH-Jeh">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="soccer" translatesAutoresizingMaskIntoConstraints="NO" id="ggF-YQ-HbU">
+                                            <rect key="frame" x="0.0" y="8" width="120" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Soccer" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ib4-w3-pfd">
+                                            <rect key="frame" x="128" y="50" width="97" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BaseballCell" id="Thh-OF-hCC" userLabel="BaseballCell" customClass="CustomTableViewCell" customModule="Template" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="430" width="375" height="132"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Thh-OF-hCC" id="w9e-cH-ZOt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Baseball" translatesAutoresizingMaskIntoConstraints="NO" id="zlh-PB-Xsh">
+                                            <rect key="frame" x="0.0" y="8" width="121" height="123"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Baseball" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="occ-eo-0J5">
+                                            <rect key="frame" x="129" y="36" width="97" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <nil key="textColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="ZtS-63-YAt" id="zz0-QQ-b5J"/>
@@ -176,10 +209,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="XqL-0l-6Pl" kind="show" identifier="SportsSegue" id="3B1-D7-ruK"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gZJ-t8-hE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1004" y="587.85607196401804"/>
+            <point key="canvasLocation" x="948" y="528"/>
         </scene>
         <!--Custom Map View Controller-->
         <scene sceneID="zyU-p4-qck">
@@ -193,10 +229,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hjO-hP-0aZ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJE-CZ-OVQ">
                                 <rect key="frame" x="280" y="533" width="60" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -205,6 +237,10 @@
                                     <action selector="onCurrentLocationButtonTapped:" destination="bup-px-mTG" eventType="touchUpInside" id="Nr6-s7-Nas"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hjO-hP-0aZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -222,7 +258,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B58-Ds-mEP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2975.1999999999998" y="587.85607196401804"/>
+            <point key="canvasLocation" x="3114" y="-1178"/>
+        </scene>
+        <!--Feed Table View Controller-->
+        <scene sceneID="dbK-mg-hFh">
+            <objects>
+                <tableViewController id="0CO-kK-6zE" customClass="FeedTableViewController" customModule="Template" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="145" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZX8-wb-Cat">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedCell" rowHeight="145" id="dg0-Fg-5Wk">
+                                <rect key="frame" x="0.0" y="28" width="375" height="145"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dg0-Fg-5Wk" id="Wo7-Ps-dDq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Atlanta Hawks cents howard plays in game 6 after losing to the wizads in game and now returning home in game 7" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rjS-Tg-u2a">
+                                            <rect key="frame" x="67" y="56" width="240" height="91"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0CO-kK-6zE" id="UrV-vK-cwG"/>
+                            <outlet property="delegate" destination="0CO-kK-6zE" id="GkR-gc-hQf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="O1h-Ih-Zau"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ero-Hv-3Lo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3004" y="488.90554722638683"/>
         </scene>
         <!--Collection View-->
         <scene sceneID="vOr-MU-nze">
@@ -262,33 +336,51 @@
             </objects>
             <point key="canvasLocation" x="64.799999999999997" y="587.85607196401804"/>
         </scene>
-        <!--Map View-->
-        <scene sceneID="vdG-eC-Igy">
+        <!--View Controller-->
+        <scene sceneID="YyG-HY-Ocs">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cKH-rb-CvU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map View" image="MapIcon" id="4Fg-dR-myy"/>
+                <viewController id="XqL-0l-6Pl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yz7-wa-Gik"/>
+                        <viewControllerLayoutGuide type="bottom" id="cKf-lj-kaK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YKM-MB-CmO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QeI-2d-Ed0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="1314"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="CZb-BO-aVx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gSG-yO-7Af" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="TZW-Bo-VJf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QXp-y6-nUB">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cHG-Nx-9Sw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="bup-px-mTG" kind="relationship" relationship="rootViewController" id="93f-jf-UQu"/>
+                        <segue destination="0CO-kK-6zE" kind="relationship" relationship="rootViewController" id="S01-1G-lkh"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A2Y-rt-ca3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sr3-0D-Sm4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2036" y="587.85607196401804"/>
+            <point key="canvasLocation" x="2064.8000000000002" y="488.90554722638683"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Baseball" width="427" height="535"/>
         <image name="HomeIcon" width="50" height="50"/>
-        <image name="MapIcon" width="50" height="50"/>
         <image name="MyLocationIcon" width="60" height="60"/>
         <image name="ProfileIcon" width="50" height="50"/>
         <image name="hqdefault" width="480" height="360"/>
         <image name="maxresdefault" width="1484" height="1053"/>
-        <image name="rap-battle" width="600" height="600"/>
+        <image name="soccer" width="467" height="700"/>
     </resources>
 </document>

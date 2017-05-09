@@ -1,35 +1,29 @@
 //
-//  CustomTableViewController.swift
+//  FeedTableViewController.swift
 //  Template
 //
-//  Created by Mateo Garcia on 4/4/17.
+//  Created by StreetCode Academy on 5/8/17.
 //  Copyright © 2017 StreetCode. All rights reserved.
 //
 
 import UIKit
-//import Firebase
 
-class CustomTableViewController: UITableViewController {
+class FeedTableViewController: UITableViewController {
 
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("red")
-        
-    performSegue(withIdentifier: "SportsSegue", sender: self)
-    }
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let frame = CGRect(origin:CGPoint(x: 0, y: 20),
+                           size: CGSize(width: self.view.frame.width,
+                                        height: 100))
+        let inputtextview = UITextView (frame: frame)
+        inputtextview.backgroundColor = UIColor.red
+        inputtextview.text = "Update Here"
+        self.navigationController?.view.addSubview(inputtextview)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,32 +35,23 @@ class CustomTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-//
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 4;
+        return 2
     }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if(indexPath.row==0){
-            let cell = tableView.dequeueReusableCell(withIdentifier: "FootballCell", for: indexPath) as! CustomTableViewCell
-            return cell
-        } else if (indexPath.row==1) {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "BasketballCell", for: indexPath) as! CustomTableViewCell
-            return cell
-        } else if (indexPath.row==2) {
-//            print ("in this statement");
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SoccerCell", for: indexPath) as! CustomTableViewCell
-            return cell
-        } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "BaseballCell", for: indexPath) as! CustomTableViewCell
-            return cell
-        }
-        // Configure the cell...
-        
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows 
+        return 5
     }
+
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FeedCell", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -113,15 +98,4 @@ class CustomTableViewController: UITableViewController {
     }
     */
 
-//    @IBAction func onSignOutButton(_ sender: UIBarButtonItem) {
-//        
-//        do {
-//            
-//            try FIRAuth.auth()?.signOut()
-//        }
-//        catch let error {
-//            
-//            print("Unable to sign out: \(error)")
-//        }
-//    }
 }
